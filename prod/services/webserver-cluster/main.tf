@@ -15,7 +15,7 @@ terraform {
 }
 
 module "webserver_cluster" {
-  source        = "../../../modules/services/webserver-cluster"
+  source        = "github.com/MarkKharitonov/learn-terraform-modules//services/webserver-cluster"
   cluster_name  = "webservers-prod"
   instance_type = "t2.micro"
   min_size      = 2
